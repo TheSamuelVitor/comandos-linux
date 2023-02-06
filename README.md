@@ -4,9 +4,23 @@
 - Todos os comandos aqui mostrados tem suas próprias bandeiras e parâmetros que podem receber.
 - Para saber esses comandos basta digitar "man _nomedocomando_" ou "_nomedocomando_ --help"
 
+## Sumário
+
+- [Lista de Comandos](#lista-de-comandos)
+  - [xdg-open](#xdg-open)
+  - [mv](#mv)
+  - [adicionando ou criando linhas em um arquivo](#adicionando-ou-criando-linhas-em-um-arquivo)
+  - [less](#less)
+  - [wc](#wc)
+  - [sort](#)
+  - [uniq](#uniq)
+
+- [Comandos Complexos](#comandos-complexos)
+- [Variáveis de Ambiente](#variaveis-de-ambiente)
+
 ## Lista de Comandos:
 
-- xdg-open
+### xdg-open
 
   - Abre o arquivo ou pasta dado como argumento;
   - Exemplo:
@@ -22,7 +36,7 @@
     xdg-open 'https://google.com'
   ```
 
-- mv
+### mv
 
   - move ou renomeia um determinado arquivo:
   - Exemplo:
@@ -35,7 +49,7 @@
     mv arquivo.pdf novoarquivo.pdf
   ```
 
-- adicionando ou criando linhas em um arquivo
+### adicionando ou criando linhas em um arquivo
 
   - Exemplo:
 
@@ -47,7 +61,7 @@
     date >> date.txt
   ```
 
-- less
+### less
 
   - Mostra um arquivo de uma nova forma, da mesma forma que o manual
   - Exemplo:
@@ -57,7 +71,7 @@
   less arquivo.txt
   ```
 
-- wc
+### wc
 
   - mostra a quantidade de linhas, palavras e bytes respectivament do arquivo dado
   - Exemplo:
@@ -71,7 +85,7 @@
   ls -al | wc
   ```
 
-- sort
+### sort
 
   - ordena os conteudos de um determinado arquivo
   - Exemplo:
@@ -84,7 +98,7 @@
   sort -n numeros.txt
   ```
 
-- uniq
+### uniq
   - junta as linhas que estejam juntas e repetidas
 
 ## Comandos Complexos
@@ -109,7 +123,7 @@ touch {a,b,c}.txt
 touch main.{py,js,html,css}
 ```
 
-# Variaveis de Ambiente:
+## Variaveis de Ambiente
 
 ```bash
 echo $(nome_da_variavel)
