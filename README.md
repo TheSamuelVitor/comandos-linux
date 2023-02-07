@@ -7,6 +7,7 @@
 ## Sumário
 
 - [Lista de Comandos](#lista-de-comandos)
+
   - [xdg-open](#xdg-open)
   - [mv](#mv)
   - [adicionando ou criando linhas em um arquivo](#adicionando-ou-criando-linhas-em-um-arquivo)
@@ -22,84 +23,92 @@
 
 ### xdg-open
 
-  - Abre o arquivo ou pasta dado como argumento;
-  - Exemplo:
+- Abre o arquivo ou pasta dado como argumento;
+- Exemplo:
 
-  ```bash
-    # abre a pasta no explorador de arquivos
-    xdg-open .
+```bash
+  # abre a pasta no explorador de arquivos
+  xdg-open .
 
-    # abre o arquivo de acordo com o padrão
-    xdg-open exemplo.pdf
+  # abre o arquivo de acordo com o padrão
+  xdg-open exemplo.pdf
 
-    # tambem pode ser usado para abrir um site no navegador
-    xdg-open 'https://google.com'
-  ```
+  # tambem pode ser usado para abrir um site no navegador
+  xdg-open 'https://google.com'
+```
 
 ### mv
 
-  - move ou renomeia um determinado arquivo:
-  - Exemplo:
+- move ou renomeia um determinado arquivo:
+- Exemplo:
 
-  ```bash
-    # move um arquivo para uma pasta
-    mv arquivo.pdf pasta
+```bash
+  # move um arquivo para uma pasta
+  mv arquivo.pdf pasta
 
-    # renomeia o arquivo
-    mv arquivo.pdf novoarquivo.pdf
-  ```
+  # renomeia o arquivo
+  mv arquivo.pdf novoarquivo.pdf
+```
 
 ### adicionando ou criando linhas em um arquivo
 
-  - Exemplo:
+- Exemplo:
 
-  ```bash
-    # apaga o conteudo do arquivo e adiciona o resultado de pwd em path.txt
-    pwd > path.txt
+```bash
+  # apaga o conteudo do arquivo e adiciona o resultado de pwd em path.txt
+  pwd > path.txt
 
-    # adiciona o resultado de date em date.txt
-    date >> date.txt
-  ```
+  # adiciona o resultado de date em date.txt
+  date >> date.txt
+```
 
 ### less
 
-  - Mostra um arquivo de uma nova forma, da mesma forma que o manual
-  - Exemplo:
+- Mostra um arquivo de uma nova forma, da mesma forma que o manual
+- Exemplo:
 
-  ```bash
-  # mostra o conteudo deste arquivo
-  less arquivo.txt
-  ```
+```bash
+# mostra o conteudo deste arquivo
+less arquivo.txt
+```
 
 ### wc
 
-  - mostra a quantidade de linhas, palavras e bytes respectivament do arquivo dado
-  - Exemplo:
+- mostra a quantidade de linhas, palavras e bytes respectivament do arquivo dado
+- Exemplo:
 
-  ```bash
-  # mostra os dados da arquivo
-  wc arquivo.txt
+```bash
+# mostra os dados da arquivo
+wc arquivo.txt
 
-  # lista os arquivos e mostra os dados especificados acima
-  # por dedução a resposta será a quantidade de arquivos
-  ls -al | wc
-  ```
+# lista os arquivos e mostra os dados especificados acima
+# por dedução a resposta será a quantidade de arquivos
+ls -al | wc
+```
 
 ### sort
 
-  - ordena os conteudos de um determinado arquivo
-  - Exemplo:
+- ordena os conteudos de um determinado arquivo
+- Exemplo:
 
-  ```bash
-  # ordena os conteudos do arquivo
-  sort palavras.txt
+```bash
+# ordena os conteudos do arquivo
+sort palavras.txt
 
-  # ordena numericamente os numeros no arquivo
-  sort -n numeros.txt
-  ```
+# ordena numericamente os numeros no arquivo
+sort -n numeros.txt
+```
 
 ### uniq
-  - junta as linhas que estejam juntas e repetidas
+
+- junta as linhas que estejam juntas e repetidas
+- Exemplo
+
+```bash
+  # nesse caso suponha que temos um arquivo com diversos sabores mas que podem ser repetidos
+  # o comando irá juntar esses sabores iguais que estão repetidos e compactar em apenas uma única linha
+  uniq flavors.txt
+```
 
 ## Comandos Complexos
 
@@ -131,3 +140,4 @@ echo $(nome_da_variavel)
 
 - USER
 - PATH
+- SHELL
