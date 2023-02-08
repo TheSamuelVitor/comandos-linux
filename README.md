@@ -128,6 +128,7 @@ find . -type d -name "*.py"
 
 - mostra todas as vezes que uma determinada palavra aparece em um arquivo
 - Exemplo:
+
 ```bash
 # mostra todas as vezes que "her" aparece em "lethergo.txt"
 grep her lethergo.txt
@@ -137,6 +138,49 @@ grep her lethergo.txt
 # - mostrando o numero da linha que aparece;
 # - mostrando as duas linhas antes e depois de cada aparicao
 grep -rnC 2 "main" .
+```
+
+### du
+
+- estima o uso de disco pelo arquivo ou diretório
+- Exemplo:
+
+```bash
+# mostra os diretorios e o tamanho de cada um de forma human readable
+du -h
+```
+
+### df
+
+- usado para ver usos de informação de disco
+- Exemplo:
+
+```bash
+# mostra os diretorios e o tamanho de cada um de forma human readable
+df -h
+```
+
+### top
+
+- lista os processos que estão ocorrendo
+- Exemplo:
+
+```bash
+# top que ordena de acordo com o campo %MEM
+top -o %MEM
+```
+
+### kill
+
+- termina um processo dado
+- Exemplo:
+
+```bash
+# lista as possibilidades do kill
+kill -l
+
+# termina um processo de forma mais gentil que tenha o uid 34415
+kill -15 34415
 ```
 
 ## Comandos Complexos
@@ -159,6 +203,15 @@ touch {a,b,c}.txt
 
 # criando arquivos com o mesmo nome mas com extensoes diferentes
 touch main.{py,js,html,css}
+
+# listando os diretorios, organizando eles do mais pesado e mostrando apenas os 10 primeiros
+du -h | sort -hr | head
+
+# roda novamente um comando de acordo com seu numero no historico
+![numero do comando no historico]
+
+# procura no historico algo que tenha a palavra especificada
+history | grep "less"
 ```
 
 ## Variaveis de Ambiente
