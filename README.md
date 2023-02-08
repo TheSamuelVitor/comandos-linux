@@ -110,6 +110,35 @@ sort -n numeros.txt
   uniq flavors.txt
 ```
 
+### find
+
+- encontra um determinado arquivo de acordo com os parametros dados
+- Exemplo:
+
+```bash
+# listando recursivamente os arquivos existentes em "."
+find .
+
+#  procurando no diretorio "." qualquer diretorio que tenha nome "*E*"
+find . -type d -name "*.py"
+
+```
+
+### grep
+
+- mostra todas as vezes que uma determinada palavra aparece em um arquivo
+- Exemplo:
+```bash
+# mostra todas as vezes que "her" aparece em "lethergo.txt"
+grep her lethergo.txt
+
+# mostra as vezes que main aparece:
+# - em todos os arquivos do diretorio;
+# - mostrando o numero da linha que aparece;
+# - mostrando as duas linhas antes e depois de cada aparicao
+grep -rnC 2 "main" .
+```
+
 ## Comandos Complexos
 
 ```bash
