@@ -183,6 +183,52 @@ kill -l
 kill -15 34415
 ```
 
+### jobs, bg, fg
+
+- conjunto de comandos que normalmente são usados juntos
+- jobs: comando para saber quais comandos foram parados;
+- bg: faz um comando rodar no background;
+- fg: retorna um comando para o foreground(tela);
+- Exemplo:
+
+```bash
+# lista os comandos e os status dos processos que estão ocorrendo
+jobs
+
+# retorna a execução de um comando na tela de acordo com o id dado em jobs
+fg [id_do_comando]
+
+# retorna a execução de um comando no background de acordo com o id dado em jobs
+bg [id_do_comando]
+```
+
+### gzip, gunzip
+
+- comprime ou expande um arquivo ou diretório
+- exemplo:
+
+```bash
+# comprime o arquivo dado e mantém o original(-f)
+gzip -k arquivo.txt
+
+# descomprime o arquivo
+gzip -d arquivo.txt.dz
+gunzip arquivo.txt.dz
+```
+
+# tar
+
+- comprime diversos arquivos em um só
+- exemplo:
+
+```bash
+# arquivo os arquivos em songs.tar
+tar -cf songs.tar lethergo.txt eyes_without_a_face.txt
+
+# desarquivando os arquivos de songs.tar
+tar -xf songs.tar 
+```
+
 ## Comandos Complexos
 
 ```bash
