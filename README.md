@@ -226,7 +226,52 @@ gunzip arquivo.txt.dz
 tar -cf songs.tar lethergo.txt eyes_without_a_face.txt
 
 # desarquivando os arquivos de songs.tar
-tar -xf songs.tar 
+tar -xf songs.tar
+```
+
+# alias
+
+- cria um comando que pode ser digitado apontando para outro comando
+- exemplo:
+
+```bash
+# ao digitar 'listAll' no terminal sai a mesma resposta que 'ls -lha'
+alias listAll='ls -lha'
+
+# lista todos os apelidos existentes
+alias -p
+```
+
+# xargs
+
+- leva como argumento de um comando a saída de outro comando
+- exemplo:
+
+```bash
+# mostra o resultado de "deadPlayers.txt"
+# e remove estes arquivos
+cat deadPlayers.txt | xargs rm
+```
+
+# ln
+
+- usado para criar um link para outro arquivo
+- hard link:
+  - nao pode linkar para diretorios
+  - nao pode linkar com links de arquivos extenos
+
+```bash
+# linkando o original com o hard link
+ln original.txt hardlink.txt
+```
+
+- soft link:
+  - pode link com diretorios e links de arquivos externos
+  - ao deletar o original o arquivo softlink tambem se apaga
+
+```bash
+# criando um link simbolico
+ln -s original.txt softlink.txt
 ```
 
 ## Comandos Complexos
