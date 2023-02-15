@@ -216,7 +216,7 @@ gzip -d arquivo.txt.dz
 gunzip arquivo.txt.dz
 ```
 
-# tar
+### tar
 
 - comprime diversos arquivos em um só
 - exemplo:
@@ -229,7 +229,7 @@ tar -cf songs.tar lethergo.txt eyes_without_a_face.txt
 tar -xf songs.tar
 ```
 
-# alias
+### alias
 
 - cria um comando que pode ser digitado apontando para outro comando
 - exemplo:
@@ -242,7 +242,7 @@ alias listAll='ls -lha'
 alias -p
 ```
 
-# xargs
+### xargs
 
 - leva como argumento de um comando a saída de outro comando
 - exemplo:
@@ -253,7 +253,7 @@ alias -p
 cat deadPlayers.txt | xargs rm
 ```
 
-# ln
+### ln
 
 - usado para criar um link para outro arquivo
 - hard link:
@@ -272,6 +272,25 @@ ln original.txt hardlink.txt
 ```bash
 # criando um link simbolico
 ln -s original.txt softlink.txt
+```
+
+### sudo
+
+- abreviacao para "Super User DO"
+- dar permissao para fazer acoes que nao seriam permitidas
+
+```bash
+# mexendo no arquivo como sudo
+ln -s original.txt softlink.txt
+```
+
+### passwd
+
+- comando para mudar a senha do usuario
+
+```bash
+# muda a senha do uuario atual
+passwd
 ```
 
 ## Comandos Complexos
