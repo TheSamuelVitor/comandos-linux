@@ -4,7 +4,10 @@
 - Todos os comandos aqui mostrados tem suas próprias bandeiras e parâmetros que podem receber.
 - Para saber esses comandos basta digitar "man _nomedocomando_" ou "_nomedocomando_ --help"
 
-## Sumário
+<details>
+<summary>
+  <h2>Sumario</h2>
+</summary>
 
 - [Lista de Comandos](#lista-de-comandos)
 
@@ -15,9 +18,23 @@
   - [wc](#wc)
   - [sort](#)
   - [uniq](#uniq)
+  - [find](#find)
+  - [grep](#grep)
+  - [du](#du)
+  - [df](#df)
+  - [top](#top)
+  - [kill](#kill)
+  - [jobs,bg,fg](#jobs-bg-fg)
+  - [gzip,gunzip](#gzip-gunzip)
+  - [alias](#alias)
+  - [xargs](#xargs)
+  - [ln](#ln)
+  - [sudo](#sudo)
+  - [passwd](#passwd)
 
 - [Comandos Complexos](#comandos-complexos)
 - [Variáveis de Ambiente](#variaveis-de-ambiente)
+</details>
 
 ## Lista de Comandos:
 
